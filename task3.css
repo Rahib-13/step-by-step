@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+*::selection{
+  color:white;
+  background-color: rgb(115, 107, 216);
+}
 #main {
   padding: 0 120px;
   margin-bottom: 120px;
@@ -26,6 +30,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 120px;
+  position: fixed;
+  z-index: 2;
 }
 .name {
   font-family: sans-serif;
@@ -46,11 +52,11 @@ header {
 
 }
 .firstlink:hover{
-    color:rgb(115, 107, 216)
+    color:rgb(115, 107, 216);
 }
 .main {
   background-color: rgb(115, 107, 216);
-  height: 70vh;
+  height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
@@ -79,7 +85,13 @@ h1 {
 }
 .thirdl {
   display: inline-block;
-  margin-left: 120px;
+  margin-left: 100px;
+}
+.links{
+  display: flex;
+}
+.thirdl1{
+  margin-left: 50px;
 }
 .headlink:hover {
   background-color: rgb(115, 107, 216);
@@ -142,6 +154,7 @@ input {
   border: 2px solid #eee;
 }
 textarea {
+  width: 100%;
   border-radius: 5px;
   background-color: #eee;
   padding-left: 30px;
@@ -216,7 +229,14 @@ h3{
 .sonlink:hover{
 color:rgb(115, 107, 216);
 }
-
-
-
-
+img{
+  transition: all 0.5s;
+}
+img:hover{
+  transform: scale(1.1);
+}
+.inputs{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
